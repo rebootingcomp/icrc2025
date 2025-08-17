@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ICRC 2025 — Call for Papers</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #111827;
+      --muted: #6b7280;
+      --text: #e5e7eb;
+      --accent: #60a5fa;
+      --accent-2: #22d3ee;
+      --ring: rgba(96,165,250,.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+      color: var(--text);
+      background: radial-gradient(1200px 700px at 20% -10%, rgba(96,165,250,.15), transparent 60%),
+                  radial-gradient(900px 600px at 120% 10%, rgba(34,211,238,.12), transparent 55%),
+                  var(--bg);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    header {
+      padding: 48px 0 24px;
+    }
+    .badge { 
+      display: inline-flex; align-items: center; gap: .5rem; 
+      border: 1px solid rgba(255,255,255,.08); color: var(--text);
+      background: rgba(255,255,255,.03); padding: 6px 12px; border-radius: 999px; font-size: .85rem; 
+      backdrop-filter: blur(6px);
+    }
+    .hero {
+      padding: 28px 0 42px;
+      display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: end;
+    }
+    .hero h1 { font-weight: 800; letter-spacing: .2px; line-height: 1.1; margin: 12px 0; font-size: clamp(2rem, 2.4rem + 1.2vw, 3.2rem); }
+    .hero p.lede {
+      margin: 8px 0 0; color: #cbd5e1; font-size: clamp(1rem, .98rem + .4vw, 1.2rem);
+    }
+    .hero-card {
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 16px;
+      padding: 18px 18px 6px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    .grid { display: grid; gap: 20px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.35);
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
+    .muted { color: var(--muted); }
+
+    .section { margin: 28px 0 10px; }
+    .section h2 { font-size: 1.5rem; margin: 0 0 10px; }
+
+    .dates { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 12px; }
+    .dates th, .dates td { padding: 12px 14px; border-bottom: 1px solid rgba(255,255,255,.06); text-align: left; }
+    .dates tr:hover td { background: rgba(255,255,255,.03); }
+
+    .kicker { color: #93c5fd; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; font-size: .78rem; }
+    .pill { display: inline-block; padding: .25rem .6rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.04); font-size: .8rem; }
+
+    footer { border-top: 1px dashed rgba(255,255,255,.15); margin-top: 32px; padding: 24px 0 60px; color: #cbd5e1; font-size: .95rem; }
+
+    ul { margin: 8px 0 0 1rem; }
+    li { margin: .3rem 0; }
+
+    .note { font-size: .95rem; color: #cbd5e1; border-left: 3px solid var(--accent); padding-left: .75rem; margin: .4rem 0 0; }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <span class="badge">10th Annual • International Conference on Rebooting Computing</span>
+    <div class="hero">
+      <div>
+        <h1>ICRC 2025 — Call for Papers</h1>
+        <p class="lede">15–16 December 2025 • San Diego, CA, USA</p>
+        <p class="lede">ICRC encourages forward-looking research across the computing stack: from novel materials and devices to circuits, algorithms, system software, and network architectures. Co-design across the stack, bridging analog and digital neuromorphic approaches alongside probabilistic, reversible, and quantum computing, is especially welcome.</p>
+      </div>
+      <div class="hero-card grid grid-2">
+        <div>
+          <div class="kicker">New in 2025</div>
+          <h3>Partnership with <em>npj Unconventional Computing</em></h3>
+          <p class="muted">All papers will be submitted for review for direct publication in <em>npj Unconventional Computing</em>, with selected submissions included in the ICRC program.</p>
+          <p class="note">Details, including abstract-only submissions, are described below.</p>
+        </div>
+        <div>
+          <div class="kicker">Location</div>
+          <h3>San Diego, California</h3>
+          <p class="muted">In-person conference • 15–16 December 2025</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Topics of Interest</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Future Computing Paradigms</h3>
+          <ul>
+            <li>Neuromorphic (brain-inspired), approximate/probabilistic, and analog computing; hybrids of these approaches</li>
+            <li>Energy-efficient computing including reversible, adiabatic, ballistic, and cryogenic computing</li>
+            <li>Quantum and optical computing</li>
+            <li>Biological and biochemical computing</li>
+            <li>Non–von Neumann architectures (e.g., in-memory processing, memory-based computing, CAM, cellular automata, neural networks)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Future Design Aspects</h3>
+          <ul>
+            <li>Extending Moore’s law; error-tolerant logic and circuits</li>
+            <li>Post-CMOS or memory-centric computing</li>
+            <li>3D/2.5D and novel heterogeneous integration/packaging</li>
+            <li>Future circuit scaling with high reliability and/or flexibility</li>
+            <li>Cybersecurity in future computing systems</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Future Software & Applications</h3>
+          <ul>
+            <li>Beyond von Neumann software design (OS, compilers, security, resource management)</li>
+            <li>Future programming paradigms and languages</li>
+            <li>Applications driving next-generation hardware (e.g., ML, deep learning, LLMs)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Submission & Publication</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Full Papers <span class="pill">Journal-Reviewed</span></h3>
+          <p>Submit directly to <em>npj Unconventional Computing</em> (collection title TBD). Indicate interest in presenting at ICRC 2025. Accepted papers are subject to the journal’s standard APC unless waived.</p>
+          <p><strong>ICRC Program Inclusion</strong> is determined from the first round of journal review:</p>
+          <ul>
+            <li><strong>Accept</strong>: Published in the journal; presented at ICRC.</li>
+            <li><strong>Revise</strong>: Continue journal review; presented at ICRC.</li>
+            <li><strong>Transfer</strong>: Considered by another Springer Nature journal (e.g., Scientific Reports); presented at ICRC.</li>
+            <li><strong>Reject</strong>: Not included in ICRC program.</li>
+          </ul>
+          <p class="muted">Submission link will be provided soon.</p>
+        </div>
+        <div class="card">
+          <h3>Abstract‑Only Submissions <span class="pill">1 page max</span></h3>
+          <p>Submit via EasyChair. Present an idea, position, or results relevant to the topics of interest. Original research is not required.</p>
+          <ul>
+            <li>If accepted: featured as short talks</li>
+            <li>Not included in any published proceedings or journals</li>
+            <li>Page limit includes references and all supporting material</li>
+          </ul>
+          <p class="muted">Submission link will be provided soon.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 16px;">
+        <h3>Special Session Proposals <span class="pill">2 pages</span></h3>
+        <p>Submit via EasyChair. Sessions may include workshops, tutorials, panels, or demonstrations on any topic above. Original research is not required. Sessions last 1–2 hours (include a rough time budget). Submissions will not be included in conference proceedings. Page limit includes references and supporting material.</p>
+        <p class="muted">Submission link will be provided soon.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Important Dates</h2>
+      <div class="card">
+        <table class="dates">
+          <tbody>
+            <tr><th>Paper submissions due</th><td>6 October 2025 (Anywhere on Earth) — <em>No extensions</em></td></tr>
+            <tr><th>Rolling review</th><td>Earlier submissions may receive earlier notifications</td></tr>
+            <tr><th>Author notification (ICRC program)</th><td>7 November 2025</td></tr>
+            <tr><th>Early registration deadline (presenters required)</th><td>16 November 2025</td></tr>
+            <tr><th>Hotel reservation deadline</th><td>16 November 2025</td></tr>
+            <tr><th>Conference</th><td>15–16 December 2025</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Organizing Committee</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <ul>
+            <li><strong>General Chair</strong>: Joseph S. Friedman — University of Texas at Dallas, USA</li>
+            <li><strong>Program Co‑Chair</strong>: Christopher H. Bennett — Sandia National Laboratories, USA</li>
+            <li><strong>Program Co‑Chair</strong>: Alexandru Paler — University of Aalto, Finland</li>
+            <li><strong>Finance Chair</strong>: Damien Querlioz — Centre de Nanosciences et de Nanotechnologies, France</li>
+            <li><strong>npj UC Publication Liaison</strong>: Christof Teuscher — Portland State University, USA</li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul>
+            <li><strong>Publicity Co‑Chair</strong>: Akinaga Hiro — Hokkaido University, Japan</li>
+            <li><strong>Publicity Co‑Chair</strong>: Catherine Schuman — University of Tennessee, Knoxville, USA</li>
+            <li><strong>Publicity Co‑Chair</strong>: Jean Anne Incorvia — University of Texas, Austin, USA</li>
+            <li><strong>Publicity Co‑Chair</strong>: Pedram Khalili — Northwestern University, USA</li>
+            <li><strong>Publicity Co‑Chair</strong>: Alvaro Velasquez — University of Colorado–Boulder, USA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Links</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <ul>
+            <li><a href="https://www.nature.com/npjunconvcomput/" target="_blank" rel="noreferrer noopener">npj Unconventional Computing</a></li>
+            <li><a href="https://www.nature.com/npjunconvcomput/for-authors-and-referees/about/editorial-policies/peer-review#the-review-process" target="_blank" rel="noreferrer noopener">npj UC peer‑review process</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul>
+            <li><a href="https://personal.utdallas.edu/~joseph.friedman/" target="_blank" rel="noreferrer noopener">Joseph S. Friedman</a></li>
+            <li><a href="https://www.linkedin.com/in/chbennett" target="_blank" rel="noreferrer noopener">Christopher H. Bennett</a></li>
+            <li><a href="https://www.aalto.fi/en/people/alexandru-paler" target="_blank" rel="noreferrer noopener">Alexandru Paler</a></li>
+            <li><a href="https://sites.google.com/site/damienquerlioz/" target="_blank" rel="noreferrer noopener">Damien Querlioz</a></li>
+            <li><a href="https://www.teuscher-lab.com/" target="_blank" rel="noreferrer noopener">Christof Teuscher</a></li>
+            <li><a href="https://orcid.org/0000-0002-5521-3148" target="_blank" rel="noreferrer noopener">Akinaga Hiro ORCID</a></li>
+            <li><a href="https://catherineschuman.com/" target="_blank" rel="noreferrer noopener">Catherine Schuman</a></li>
+            <li><a href="https://www.ece.utexas.edu/people/faculty/jean-anne-incorvia" target="_blank" rel="noreferrer noopener">Jean Anne Incorvia</a></li>
+            <li><a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/khalili-pedram.html" target="_blank" rel="noreferrer noopener">Pedram Khalili</a></li>
+            <li><a href="https://www.colorado.edu/cs/alvaro-velasquez" target="_blank" rel="noreferrer noopener">Alvaro Velasquez</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">For a live version of this CFP, including future updates, please visit the conference webpage (link to be provided soon).</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 International Conference on Rebooting Computing (ICRC). All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
