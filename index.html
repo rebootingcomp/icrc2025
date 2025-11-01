@@ -78,6 +78,39 @@
       margin-top: 30px;
       color: var(--muted);
     }
+
+    /* Styling for the flat, fixed-width submit button */
+    .icrc-submit-btn {
+        /* Fixed Width Requirement */
+        width: 450px; /* Adjust this value as needed for your layout */
+        
+        /* Color Scheme & Flat Design */
+        background-color: #1E4E79; /* A deep, professional blue */
+        color: white;              /* White text for high contrast */
+        border: none;              /* Makes it flat by removing the default border */
+        
+        /* Visual Aesthetics */
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 4px; /* Slightly rounded corners for a modern, flat look */
+        
+        /* Smooth transition for the hover effect */
+        transition: background-color 0.3s ease;
+    }
+
+    /* Hover Effect: Changes color slightly when the user hovers over the button */
+    .icrc-submit-btn:hover {
+        background-color: #2A67A2; /* A slightly brighter shade of blue */
+    }
+
+    /* Active/Clicked Effect: Darkens the button when pressed */
+    .icrc-submit-btn:active {
+        background-color: #143555;
+    }
   </style>
 </head>
 <body>
@@ -166,6 +199,58 @@
         </table>
       </div>
     </section>
+
+    <section class="section">
+      <h2>Registration</h2>
+      <div class="card">
+        <form target="_blank" name="PrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+          <input type="hidden" name="LinkId" value="4e63d5f5-e37d-40ac-be3f-f90909b0e807" />
+          <input type="submit" value="Register Now!" class="icrc-submit-btn"/>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Sponsorship</h2>
+
+        Sponsoring ICRC provides unparalleled exposure to key decision-makers and top researchers.
+        
+        All sponsor levels & benefits are below:
+
+           
+
+      <div class="card">
+        <form target="_blank" name="PlatinumPrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+          
+          <input type="hidden" name="LinkId" value="97489add-64f5-4000-8cee-21987bfd682d" />
+          <input type="submit" value="👑 Platinum: ICRC Dinner & Full Coffee Day" class="icrc-submit-btn"/>
+        </form>
+
+        <p></p>
+        
+        <form target="_blank" name="GoldPrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+          <input type="hidden" name="LinkId" value="ae5e3eb4-baf6-42db-ae40-11c742c9888c" />
+          <input type="submit" value="🥇 Gold: ICRC Lunch" class="icrc-submit-btn"/>
+        </form>
+
+        <p></p>
+                
+        <form target="_blank" name="SilverPrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+          <input type="hidden" name="LinkId" value="6ce85abe-80a9-4319-b31c-c16bec8ecb8a" />
+          <input type="submit" value="🥈 Silver: Full Coffee Day" class="icrc-submit-btn"/>
+        </form>
+
+        <p></p>
+        
+        <form target="_blank" name="BronzePrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+          <input type="hidden" name="LinkId" value="67469826-857f-458a-a167-bc073f341229" />
+          <input type="submit" value="🥉 Bronze: ICRC Breakfast" class="icrc-submit-btn"/>
+        </form>
+      </div>
+      
+    </section>
+
+    
 
     <section class="section">
       <h2>Organizing Committee</h2>
