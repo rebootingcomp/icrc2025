@@ -1,49 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ICRC 2025 — Call for Papers</title>
   <style>
-:root {
-  --bg: #1e90ff; /* Dodger Blue */
-  --card: #f0f8ff; /* Alice Blue, for a soft contrast */
-  --muted: #4682b4; /* Steel Blue for a softer text */
-  --text: #001f3f; /* Dark Navy for high contrast */
-  --accent: #e3c101; /* Gold, like the California sun */
-  --accent-2: #32cd32; /* Lime Green for a retro feel */
-  --border: #87cefa; /* Light Sky Blue for borders */
-}
+    :root {
+      --bg: #1e90ff;
+      /* Dodger Blue */
+      --card: #f0f8ff;
+      /* Alice Blue, for a soft contrast */
+      --muted: #4682b4;
+      /* Steel Blue for a softer text */
+      --text: #001f3f;
+      /* Dark Navy for high contrast */
+      --accent: #e3c101;
+      /* Gold, like the California sun */
+      --accent-2: #32cd32;
+      /* Lime Green for a retro feel */
+      --border: #87cefa;
+      /* Light Sky Blue for borders */
+    }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-  background-color: #ffffff; /* A clean white */
-  background-image:
-    linear-gradient(rgba(173, 216, 230, 0.5) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(245, 222, 179, 0.5) 1px, transparent 1px);
-  background-size: 20px 20px;
-  margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  line-height: 1.6;
-  color: var(--text);
-}
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { width: min(800px, 90%); margin: 0 auto; padding: 20px 0; }
-    header { padding: 40px 0 20px; text-align: center; }
-    header h1 { font-size: clamp(1.8rem, 2vw + 1rem, 2.5rem); margin-bottom: 8px; }
+      background-color: #ffffff;
+      /* A clean white */
+      background-image:
+        linear-gradient(rgba(173, 216, 230, 0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245, 222, 179, 0.5) 1px, transparent 1px);
+      background-size: 20px 20px;
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(800px, 90%);
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    header {
+      padding: 40px 0 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(1.8rem, 2vw + 1rem, 2.5rem);
+      margin-bottom: 8px;
+    }
+
     .lede {
-  font-family: Georgia, "Times New Roman", Times, serif; /* A classic, elegant font */
-  text-align: justify; /* Justifies the text */
-  color: #6c757d; /* Muted gray for secondary text */
-  max-width: 600px;
-  margin: 0 auto 20px;
-}
-    .section { margin-top: 30px; }
-    .section h2 { font-size: 1.5rem; border-bottom: 2px solid var(--border); padding-bottom: 8px; margin-bottom: 15px; }
-    ul { list-style-type: disc; padding-left: 20px; }
-    li { margin-bottom: 8px; }
-    li strong { color: var(--text); }
+      font-family: Georgia, "Times New Roman", Times, serif;
+      /* A classic, elegant font */
+      text-align: justify;
+      /* Justifies the text */
+      color: #6c757d;
+      /* Muted gray for secondary text */
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: var(--text);
+    }
+
     .pill {
       font-size: .8rem;
       padding: 4px 8px;
@@ -51,25 +107,41 @@
       background-color: var(--border);
       color: var(--muted);
     }
-    .card, .dates {
+
+    .card,
+    .dates {
       background-color: #fff;
       border: 1px solid var(--border);
       padding: 20px;
       border-radius: 8px;
       margin-bottom: 20px;
     }
+
     .card h3 {
-       margin-top: 0; 
-       color: #79a1d4; /* A soft, pastel blue */
+      margin-top: 0;
+      color: #79a1d4;
+      /* A soft, pastel blue */
     }
-    .muted { color: var(--muted); }
-    .dates td, .dates th {
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .dates td,
+    .dates th {
       text-align: left;
       padding: 10px 0;
       border-bottom: 1px dashed var(--border);
     }
-    .dates th { width: 40%; }
-    .dates tr:last-child td, .dates tr:last-child th { border-bottom: none; }
+
+    .dates th {
+      width: 40%;
+    }
+
+    .dates tr:last-child td,
+    .dates tr:last-child th {
+      border-bottom: none;
+    }
 
     footer {
       border-top: 1px solid var(--border);
@@ -81,65 +153,75 @@
 
     /* Styling for the flat, fixed-width submit button */
     .icrc-submit-btn {
-        /* Fixed Width Requirement */
-        width: 450px; /* Adjust this value as needed for your layout */
-        
-        /* Color Scheme & Flat Design */
-        background-color: #1E4E79; /* A deep, professional blue */
-        color: white;              /* White text for high contrast */
-        border: none;              /* Makes it flat by removing the default border */
-        
-        /* Visual Aesthetics */
-        padding: 12px 20px;
-        font-size: 13px;
-        font-weight: bold;
-        cursor: pointer;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        border-radius: 4px; /* Slightly rounded corners for a modern, flat look */
-        
-        /* Smooth transition for the hover effect */
-        transition: background-color 0.3s ease;
+      /* Fixed Width Requirement */
+      width: 450px;
+      /* Adjust this value as needed for your layout */
+
+      /* Color Scheme & Flat Design */
+      background-color: #1E4E79;
+      /* A deep, professional blue */
+      color: white;
+      /* White text for high contrast */
+      border: none;
+      /* Makes it flat by removing the default border */
+
+      /* Visual Aesthetics */
+      padding: 12px 20px;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-radius: 4px;
+      /* Slightly rounded corners for a modern, flat look */
+
+      /* Smooth transition for the hover effect */
+      transition: background-color 0.3s ease;
     }
 
     /* Hover Effect: Changes color slightly when the user hovers over the button */
     .icrc-submit-btn:hover {
-        background-color: #2A67A2; /* A slightly brighter shade of blue */
+      background-color: #2A67A2;
+      /* A slightly brighter shade of blue */
     }
 
     /* Active/Clicked Effect: Darkens the button when pressed */
     .icrc-submit-btn:active {
-        background-color: #143555;
+      background-color: #143555;
     }
   </style>
 </head>
+
 <body>
   <header class="container">
     <h1>10<sup>th</sup> International Conference on <br> Rebooting Computing (ICRC) 2025</h1>
     <h3>15–16 December 2025 • San Diego, CA, USA</h3>
-    <p class="lede">ICRC encourages forward-looking research across the computing stack: from novel materials and devices to circuits, algorithms, system software, and network architectures. Co-design across the stack, bridging analog and digital neuromorphic approaches alongside probabilistic, reversible, and quantum computing, is especially welcome.</p>
+    <p class="lede">ICRC encourages forward-looking research across the computing stack: from novel materials and
+      devices to circuits, algorithms, system software, and network architectures. Co-design across the stack, bridging
+      analog and digital neuromorphic approaches alongside probabilistic, reversible, and quantum computing, is
+      especially welcome.</p>
 
     <p class="lede">
-      <p></p>
-      <a href="#registration">
-        <button type="button" class="icrc-submit-btn">
-          Registration is open
-        </button>
-      </a>
-      <p></p>
-      <a href="#sponsorship">
-        <button type="button" class="icrc-submit-btn">
-          Sponsorship opportunities are available
-        </button>
-      </a>
+    <p></p>
+    <a href="#registration">
+      <button type="button" class="icrc-submit-btn">
+        Registration is open
+      </button>
+    </a>
+    <p></p>
+    <a href="#sponsorship">
+      <button type="button" class="icrc-submit-btn">
+        Sponsorship opportunities are available
+      </button>
+    </a>
     </p>
 
     <div class="card">
       Gold Sponsors:<br>
-      <a target="_blank" href="https://www.vaire.co"><img height="50px" src="sponsors/vaire.png"/></a>
+      <a target="_blank" href="https://www.vaire.co"><img height="50px" src="sponsors/vaire.png" /></a>
     </div>
 
-    
+
   </header>
 
   <main class="container">
@@ -148,11 +230,13 @@
       <div class="card">
         <h3>Future Computing Paradigms</h3>
         <ul>
-          <li>Neuromorphic (brain-inspired), approximate/probabilistic, and analog computing; hybrids of these approaches</li>
+          <li>Neuromorphic (brain-inspired), approximate/probabilistic, and analog computing; hybrids of these
+            approaches</li>
           <li>Energy-efficient computing including reversible, adiabatic, ballistic, and cryogenic computing</li>
           <li>Quantum and optical computing</li>
           <li>Biological and biochemical computing</li>
-          <li>Non–von Neumann architectures (e.g., in-memory processing, memory-based computing, CAM, cellular automata, neural networks)</li>
+          <li>Non–von Neumann architectures (e.g., in-memory processing, memory-based computing, CAM, cellular automata,
+            neural networks)</li>
         </ul>
       </div>
       <div class="card">
@@ -179,47 +263,72 @@
       <h2>Submission & Publication</h2>
       <div class="card">
         <h3>Full Papers <span class="pill">Journal-Reviewed</span></h3>
-        <p>Submit directly to <em>npj Unconventional Computing</em> (collection title "Future Computing: Paradigms, Technologies, Software and Applications"). Indicate interest in presenting at ICRC 2025. Accepted papers are subject to the journal’s standard APC unless waived.</p>
+        <p>Submit directly to <em>npj Unconventional Computing</em> (collection title "Future Computing: Paradigms,
+          Technologies, Software and Applications"). Indicate interest in presenting at ICRC 2025. Accepted papers are
+          subject to the journal’s standard APC unless waived.</p>
         <p><strong>ICRC Program Inclusion</strong> is determined from the first round of journal review:</p>
         <ul>
           <li><strong>Accept</strong>: Published in the journal; presented at ICRC.</li>
           <li><strong>Revise</strong>: Continue journal review; presented at ICRC.</li>
-          <li><strong>Transfer</strong>: Considered by another Springer Nature journal (e.g., Scientific Reports); presented at ICRC.</li>
+          <li><strong>Transfer</strong>: Considered by another Springer Nature journal (e.g., Scientific Reports);
+            presented at ICRC.</li>
           <li><strong>Reject</strong>: Not included in ICRC program.</li>
         </ul>
-        <p class="muted"><a href="https://www.nature.com/collections/geedgagjei" target="_blank">https://www.nature.com/collections/geedgagjei</a></p>
+        <p class="muted"><a href="https://www.nature.com/collections/geedgagjei"
+            target="_blank">https://www.nature.com/collections/geedgagjei</a></p>
       </div>
       <div class="card">
         <h3>Abstract‑Only Submissions <span class="pill">1 page max</span></h3>
-        <p>Submit via EasyChair. Present an idea, position, or results relevant to the topics of interest. Original research is not required.</p>
+        <p>Submit via EasyChair. Present an idea, position, or results relevant to the topics of interest. Original
+          research is not required.</p>
         <ul>
           <li>If accepted: featured as short talks</li>
           <li>Not included in any published proceedings or journals</li>
           <li>Page limit includes references and all supporting material</li>
         </ul>
-        <p class="muted"><a href="https://easychair.org/conferences/?conf=icrc2025" target="_blank">https://easychair.org/conferences/?conf=icrc2025</a></p>
+        <p class="muted"><a href="https://easychair.org/conferences/?conf=icrc2025"
+            target="_blank">https://easychair.org/conferences/?conf=icrc2025</a></p>
       </div>
       <div class="card">
         <h3>Special Session Proposals <span class="pill">2 pages</span></h3>
-        <p>Submit via EasyChair. Sessions may include workshops, tutorials, panels, or demonstrations on any topic above. Original research is not required. Sessions last 1–2 hours (include a rough time budget). Submissions will not be included in conference proceedings. Page limit includes references and supporting material.</p>
-        <p class="muted"><a href="https://easychair.org/conferences/?conf=icrc2025" target="_blank">https://easychair.org/conferences/?conf=icrc2025</a></p>
+        <p>Submit via EasyChair. Sessions may include workshops, tutorials, panels, or demonstrations on any topic
+          above. Original research is not required. Sessions last 1–2 hours (include a rough time budget). Submissions
+          will not be included in conference proceedings. Page limit includes references and supporting material.</p>
+        <p class="muted"><a href="https://easychair.org/conferences/?conf=icrc2025"
+            target="_blank">https://easychair.org/conferences/?conf=icrc2025</a></p>
       </div>
     </section>
 
     <section class="section">
       <h2>Important Dates</h2>
-      <div class="card">
-        <table class="dates">
-          <tbody>
-            <tr><th>Paper submissions due</th><td>6 October 2025 (Anywhere on Earth) — <em>No extensions</em></td></tr>
-            <tr><th>Rolling review</th><td>Earlier submissions may receive earlier notifications</td></tr>
-            <tr><th>Author notification (ICRC program)</th><td>7 November 2025</td></tr>
-            <tr><th>Early registration deadline (presenters required)</th><td>16 November 2025</td></tr>
-            <tr><th>Hotel reservation deadline</th><td>16 November 2025</td></tr>
-            <tr><th>Conference</th><td>15–16 December 2025</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <table class="dates">
+        <tbody>
+          <tr>
+            <th>Paper submissions due</th>
+            <td>6 October 2025 (Anywhere on Earth) — <em>No extensions</em></td>
+          </tr>
+          <tr>
+            <th>Rolling review</th>
+            <td>Earlier submissions may receive earlier notifications</td>
+          </tr>
+          <tr>
+            <th>Author notification (ICRC program)</th>
+            <td>7 November 2025</td>
+          </tr>
+          <tr>
+            <th>Early registration deadline (presenters required)</th>
+            <td>16 November 2025</td>
+          </tr>
+          <tr>
+            <th>Hotel reservation deadline</th>
+            <td>16 November 2025</td>
+          </tr>
+          <tr>
+            <th>Conference</th>
+            <td>15–16 December 2025</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="section">
@@ -229,9 +338,10 @@
           <li>Early Registration until 16 November 2025 -- $300</li>
           <li>Regular Registration after 16 November 2025 -- $450</li>
         </ul>
-        <form target="_blank" name="PrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+        <form target="_blank" name="PrePage" method="post"
+          action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
           <input type="hidden" name="LinkId" value="4e63d5f5-e37d-40ac-be3f-f90909b0e807" />
-          <input type="submit" value="Register Now!" class="icrc-submit-btn"/>
+          <input type="submit" value="Register Now!" class="icrc-submit-btn" />
         </form>
       </div>
     </section>
@@ -239,66 +349,82 @@
     <section class="section">
       <h2 id="sponsorship">Sponsorship</h2>
 
-      Sponsoring ICRC provides unparalleled exposure to key decision-makers and top researchers.
-      Please contact <a href="mailto:joseph.friedman@utdallas.edu">joseph.friedman@utdallas.edu</a> with any questions regarding sponsorship.
-      
-      All sponsor levels & benefits are below:
-
       <div class="card">
-        <form target="_blank" name="PlatinumPrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
-          
+
+        Sponsoring ICRC provides unparalleled exposure to key decision-makers and top researchers.
+        Please contact <a href="mailto:joseph.friedman@utdallas.edu">joseph.friedman@utdallas.edu</a> with any questions
+        regarding sponsorship.
+        <br>
+        All sponsor levels & benefits are below:
+        <br>
+        <form target="_blank" name="PlatinumPrePage" method="post"
+          action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+
           <input type="hidden" name="LinkId" value="97489add-64f5-4000-8cee-21987bfd682d" />
-          <input type="submit" value="👑 Platinum: ICRC Dinner & Full Coffee Day" class="icrc-submit-btn"/>
+          <input type="submit" value="👑 Platinum: ICRC Dinner & Full Coffee Day" class="icrc-submit-btn" />
         </form>
 
         <p></p>
-        
-        <form target="_blank" name="GoldPrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+
+        <form target="_blank" name="GoldPrePage" method="post"
+          action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
           <input type="hidden" name="LinkId" value="ae5e3eb4-baf6-42db-ae40-11c742c9888c" />
-          <input type="submit" value="🥇 Gold: ICRC Lunch" class="icrc-submit-btn"/>
+          <input type="submit" value="🥇 Gold: ICRC Lunch" class="icrc-submit-btn" />
         </form>
 
         <p></p>
-                
-        <form target="_blank" name="SilverPrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+
+        <form target="_blank" name="SilverPrePage" method="post"
+          action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
           <input type="hidden" name="LinkId" value="6ce85abe-80a9-4319-b31c-c16bec8ecb8a" />
-          <input type="submit" value="🥈 Silver: Full Coffee Day" class="icrc-submit-btn"/>
+          <input type="submit" value="🥈 Silver: Full Coffee Day" class="icrc-submit-btn" />
         </form>
 
         <p></p>
-        
-        <form target="_blank" name="BronzePrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+
+        <form target="_blank" name="BronzePrePage" method="post"
+          action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
           <input type="hidden" name="LinkId" value="67469826-857f-458a-a167-bc073f341229" />
-          <input type="submit" value="🥉 Bronze: ICRC Breakfast" class="icrc-submit-btn"/>
+          <input type="submit" value="🥉 Bronze: ICRC Breakfast" class="icrc-submit-btn" />
         </form>
       </div>
-      
+
     </section>
 
     <section class="section">
       <h2>Organizing Committee</h2>
       <div class="card">
         <ul>
-          <li><a href="https://personal.utdallas.edu/~joseph.friedman/" target="_blank" rel="noreferrer noopener">Joseph S. Friedman, University of Texas at Dallas</a></li>
-          <li><a href="https://www.linkedin.com/in/chbennett" target="_blank" rel="noreferrer noopener">Christopher H. Bennett, Sandia Labs</a></li>
-          <li><a href="https://www.aalto.fi/en/people/alexandru-paler" target="_blank" rel="noreferrer noopener">Alexandru Paler, Aalto University</a></li>
-          <li><a href="https://sites.google.com/site/damienquerlioz/" target="_blank" rel="noreferrer noopener">Damien Querlioz, CNRS, Université Paris-Saclay</a></li>
-          <li><a href="https://www.teuscher-lab.com/" target="_blank" rel="noreferrer noopener">Christof Teuscher, Portland State University</a></li>
-          <li><a href="https://orcid.org/0000-0002-5521-3148" target="_blank" rel="noreferrer noopener">Akinaga Hiro, Hokkaido University</a></li>
-          <li><a href="https://catherineschuman.com/" target="_blank" rel="noreferrer noopener">Catherine Schuman, University of Tennessee</a></li>
-          <li><a href="https://www.ece.utexas.edu/people/faculty/jean-anne-incorvia" target="_blank" rel="noreferrer noopener">Jean Anne Incorvia, University of Texas at Austin</a></li>
-          <li><a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/khalili-pedram.html" target="_blank" rel="noreferrer noopener">Pedram Khalili, Northwestern University</a></li>
-          <li><a href="https://www.colorado.edu/cs/alvaro-velasquez" target="_blank" rel="noreferrer noopener">Alvaro Velasquez, University of Colorado Boulder</a></li>
+          <li><a href="https://personal.utdallas.edu/~joseph.friedman/" target="_blank" rel="noreferrer noopener">Joseph
+              S. Friedman, University of Texas at Dallas</a></li>
+          <li><a href="https://www.linkedin.com/in/chbennett" target="_blank" rel="noreferrer noopener">Christopher H.
+              Bennett, Sandia Labs</a></li>
+          <li><a href="https://www.aalto.fi/en/people/alexandru-paler" target="_blank"
+              rel="noreferrer noopener">Alexandru Paler, Aalto University</a></li>
+          <li><a href="https://sites.google.com/site/damienquerlioz/" target="_blank" rel="noreferrer noopener">Damien
+              Querlioz, CNRS, Université Paris-Saclay</a></li>
+          <li><a href="https://www.teuscher-lab.com/" target="_blank" rel="noreferrer noopener">Christof Teuscher,
+              Portland State University</a></li>
+          <li><a href="https://orcid.org/0000-0002-5521-3148" target="_blank" rel="noreferrer noopener">Akinaga Hiro,
+              Hokkaido University</a></li>
+          <li><a href="https://catherineschuman.com/" target="_blank" rel="noreferrer noopener">Catherine Schuman,
+              University of Tennessee</a></li>
+          <li><a href="https://www.ece.utexas.edu/people/faculty/jean-anne-incorvia" target="_blank"
+              rel="noreferrer noopener">Jean Anne Incorvia, University of Texas at Austin</a></li>
+          <li><a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/khalili-pedram.html"
+              target="_blank" rel="noreferrer noopener">Pedram Khalili, Northwestern University</a></li>
+          <li><a href="https://www.colorado.edu/cs/alvaro-velasquez" target="_blank" rel="noreferrer noopener">Alvaro
+              Velasquez, University of Colorado Boulder</a></li>
         </ul>
       </div>
     </section>
 
     <section class="section">
       <h2>Sponsors</h2>
-        <div class="card">
-          Gold Sponsors:<br>
-          <a target="_blank" href="https://www.vaire.co"><img height="50px" src="sponsors/vaire.png"/></a>
-        </div>
+      <div class="card">
+        Gold Sponsors:<br>
+        <a target="_blank" href="https://www.vaire.co"><img height="50px" src="sponsors/vaire.png" /></a>
+      </div>
     </section>
   </main>
 </body>
